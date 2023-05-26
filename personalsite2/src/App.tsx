@@ -3,6 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
+/** App for rendering personalsite application
+ * 
+ * Props: None
+ * 
+ * State: None
+ * 
+ * @returns App component
+ * 
+ * App => PersonalSiteApp
+ */
+
 function App() {
   const [count, setCount] = useState(0)
 
