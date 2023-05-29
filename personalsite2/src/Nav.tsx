@@ -20,3 +20,32 @@ import userContext from "./userContext";
  * PersonalSiteApp -> Nav
  */
 
+/**
+ * {
+ *  title : ...,
+ *  path : ... 
+ * }
+ */
+interface DropdownItem {
+    title: string;
+    path: string;
+}
+
+/**An array of dropdown items 
+ * [
+ *  {title : ...,
+ *   path : ...},
+ *  {...}
+ * ]
+*/
+interface NavbarProps {
+    dropdownItems: DropdownItem[];
+}
+
+function Nav({dropdownItems}:NavbarProps){
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleDropdown(){
+        setIsOpen(!isOpen);
+    }
+}
