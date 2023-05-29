@@ -16,9 +16,13 @@ import "./PersonalSiteApp.css";
 function PersonalSiteApp(): JSX.Element {
   
     return (
-      <BrowserRouter>
-
-      </BrowserRouter>
+      <div className="PersonalSiteApp">
+        <div className="container">
+          <BrowserRouter>
+              
+          </BrowserRouter>
+        </div>
+      </div>
     );
   }
   
