@@ -48,4 +48,18 @@ function Nav({dropdownItems}:NavbarProps){
     function toggleDropdown(){
         setIsOpen(!isOpen);
     }
+    return (
+        <header className="d-flex">
+            <NavLink
+                className={
+                "d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+                }
+                to={"/"}
+            >
+                {/* create image for logo/home page route */}
+            </NavLink>
+            
+
+        </header>
+    )
 }
