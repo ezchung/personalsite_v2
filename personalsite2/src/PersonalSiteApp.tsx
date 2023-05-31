@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./PersonalSiteApp.css";
+import Nav from "./Nav";
 
 /** Component for managing personalsite application
  * 
@@ -10,7 +11,7 @@ import "./PersonalSiteApp.css";
  * 
  * @returns PersonalSiteApp Component
  * 
- * App => PersonalSiteApp => ??? 
+ * App => PersonalSiteApp => {Nav, }
  */
 
 function PersonalSiteApp(): JSX.Element {
@@ -19,7 +20,7 @@ function PersonalSiteApp(): JSX.Element {
       <div className="PersonalSiteApp">
         <div className="container">
           <BrowserRouter>
-              
+            <Nav></Nav>
           </BrowserRouter>
         </div>
       </div>
