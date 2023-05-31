@@ -49,7 +49,7 @@ function Nav({dropdownItems}:NavbarProps){
         setIsOpen(!isOpen);
     }
     return (
-        <header className="d-flex">
+        <nav className="navbar">
             <NavLink
                 className={
                 "d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
@@ -57,9 +57,30 @@ function Nav({dropdownItems}:NavbarProps){
                 to={"/"}
             >
                 {/* create image for logo/home page route */}
+                Hello
             </NavLink>
-            
-
-        </header>
+            <div className="navbar-dropdown">
+                <button className="dropdown-toggle" onClick={toggleDropdown}>
+                    {/* Insert image */}
+                    Dropdown
+                </button>
+                {isOpen && (
+                    <ul className="dropdown-menu">
+                        <li className="nav-link">
+                            <NavLink to={"/about"}>
+                                About
+                            </NavLink>
+                        </li>
+                        <li className="nav-link">
+                            <NavLink to={"/projects"}>
+                                Projects
+                            </NavLink>
+                        </li>
+                    </ul>
+                )}
+            </div>
+        </nav>
     )
 }
+
+export default Nav;
