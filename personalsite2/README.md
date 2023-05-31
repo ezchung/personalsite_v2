@@ -3,3 +3,7 @@
 - About
 - Projects
 - Potentially Blog
+
+### Organizing 
+- types 
+- images
