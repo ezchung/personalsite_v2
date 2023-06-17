@@ -15,12 +15,16 @@ import Nav from "./Nav";
  */
 
 function PersonalSiteApp(): JSX.Element {
+  const links = [
+    {title : "About", path : "/about"},
+    {title : "Projects", path : "/projects"}
+  ];
   
     return (
       <div className="PersonalSiteApp">
         <div className="container">
           <BrowserRouter>
-            <Nav></Nav>
+            <Nav dropdownItems={links}></Nav>
           </BrowserRouter>
         </div>
       </div>

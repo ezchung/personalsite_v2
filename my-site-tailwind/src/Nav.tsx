@@ -44,6 +44,8 @@ interface NavbarProps {
 function Nav({dropdownItems}:NavbarProps){
     const [isOpen, setIsOpen] = useState(false);
 
+    console.log(dropdownItems);
+
     function toggleDropdown(){
         setIsOpen(!isOpen);
     }
