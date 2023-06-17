@@ -88,3 +88,17 @@ function Nav({dropdownItems}:NavbarProps){
 }
 
 export default Nav;
+
+/** Notes for Tailwind CSS
+ * 
+ * Added the "fixed" and "top-0" classes to the navbar element to make it stick to the top of the page.
+ * Added the "left-0" and "right-0" classes to make the navbar fill the entire width of the page.
+ * 
+ * Future options
+ *  Utilized the dropdownItems prop to dynamically render the dropdown menu items using map().
+ *      {dropdownItems.map((item, index) => (
+                <li className="nav-link" key={index}>
+                  <NavLink to={item.path}>{item.title}</NavLink>
+                </li>
+              ))}
+ */
