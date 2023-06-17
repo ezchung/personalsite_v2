@@ -48,37 +48,42 @@ function Nav({dropdownItems}:NavbarProps){
         setIsOpen(!isOpen);
     }
     return (
-        <nav className="navbar">
-            <NavLink
-                className={
-                "d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-                }
-                to={"/"}
-            >
-                {/* create image for logo/home page route */}
-                Hello
-            </NavLink>
-            <div className="navbar-dropdown">
-                <button className="dropdown-toggle" onClick={toggleDropdown}>
-                    {/* Insert image */}
-                    Dropdown
-                </button>
-                {isOpen && (
-                    <ul className="dropdown-menu">
-                        <li className="nav-link">
-                            <NavLink to={"/about"}>
-                                About
-                            </NavLink>
-                        </li>
-                        <li className="nav-link">
-                            <NavLink to={"/projects"}>
-                                Projects
-                            </NavLink>
-                        </li>
-                    </ul>
-                )}
-            </div>
-        </nav>
+        <div>
+            <nav className="navbar fixed top-0 left-0 right-0 bg-teal-500 p-6">
+                <div className="flex items-center justify-between">
+
+                    <NavLink
+                        className={
+                            "d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+                        }
+                        to={"/"}
+                        >
+                        {/* create image for logo/home page route */}
+                        Hello
+                    </NavLink>
+                    <div className="navbar-dropdown">
+                        <button className="dropdown-toggle" onClick={toggleDropdown}>
+                            {/* Insert image */}
+                            Dropdown
+                        </button>
+                        {isOpen && (
+                            <ul className="dropdown-menu">
+                                <li className="nav-link">
+                                    <NavLink to={"/about"}>
+                                        About
+                                    </NavLink>
+                                </li>
+                                <li className="nav-link">
+                                    <NavLink to={"/projects"}>
+                                        Projects
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        )}
+                    </div>
+                </div>
+            </nav>
+        </div>
     )
 }
 
