@@ -25,7 +25,7 @@ import "./Nav.css";
  *  path : ... 
  * }
  */
-interface DropdownItem {
+interface IDropdownItem {
     title: string;
     path: string;
 }
@@ -38,7 +38,7 @@ interface DropdownItem {
  * ]
 */
 interface NavbarProps {
-    dropdownItems: DropdownItem[];
+    dropdownItems: IDropdownItem[];
 }
 
 function Nav({dropdownItems}:NavbarProps){
